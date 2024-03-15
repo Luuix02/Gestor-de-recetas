@@ -1,0 +1,25 @@
+header{
+background-color: var(--background);
+background-color: rosybrown;
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+height: var(--header-height);
+display: flex;
+align-items: center;
+gap: 20px;
+padding-inline: 16px;
+border-block-end: 1px solid var(--outline);
+z-index: 4;
+}
+.contenedorpaginas {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 440px;
+   
+}
+.contenedorpaginas > * {
+    margin-right: 380px; 
+}
