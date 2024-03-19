@@ -1,4 +1,51 @@
-.buscatureceta{
-    width: 170px;
-    height: 550px;
+.fondo {
+  position: relative;
+}
+
+.imagenFondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 410px;
+  margin-top: 10px; 
+}
+
+.contenidoCentrado {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 110px;
+  color: white;
+}
+
+.titulo {
+  font-size: 2.5rem; 
+  margin-bottom: 3rem; 
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+}
+
+.buscareceta {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  
+}
+
+.botonbuscador {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #d72b1b; 
+  border: none;
+  border-radius: 0.25rem;
+  color: white; 
+  cursor: pointer;
 }

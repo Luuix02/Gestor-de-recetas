@@ -6,13 +6,15 @@ export default function Navbar() {
 
     return (
 
-        <header>
-            <nav className="navbar">
+        <nav className='navBar'>
+
+            <div className='contenedorPrincipal'>
+                
                 <div className='logo'>
-                    <Image src="https://cdn-icons-png.flaticon.com/256/6710/6710068.png" width={70} height={70} />
+                <Image src="https://seeklogo.com/images/C/Cocina_Estudio_Creativo-logo-9AF8008C9D-seeklogo.com.png" width={70} height={70} />
                 </div>
-                <div className='contenedorpaginas'>
-                    <div className='home'>
+
+                <div className='home'>
                         <Link href="/" className="navbarLink">
                             Home
                         </Link>
@@ -24,14 +26,20 @@ export default function Navbar() {
                         </Link>
                     </div>
 
+
                     <div className='misrecetas'>
                         <Link href={`/mireceta`} className="navbarLink">
                             Mis recetas
                         </Link>
                     </div>
-                </div>
-            </nav>
-        </header>
+
+
+            </div>
+
+        </nav>
+
+        
+                
         
 
     );
