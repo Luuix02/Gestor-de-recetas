@@ -4,7 +4,7 @@ import CardDesayuno from "../../../components/componenteDesayuno/page";
 import ContenidoHome from "../../../components/contenidoHome/page";
 import Navbar from "../../../components/navbar/page";
 
-export default function desayuno() {
+export default function Desayuno() {
   return (
     <>
     <Navbar/>

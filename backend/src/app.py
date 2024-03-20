@@ -15,7 +15,9 @@ def createRecipe():
         'nombre_receta': request.json['nombre_receta'],
         'ingredientes': request.json['ingredientes'],
         'instrucciones': request.json['instrucciones'],
-        'categoria': request.json['categoria']
+        'categoria': request.json['categoria'],
+        'tiempo_preparacion': request.json['tiempo_preparacion'],
+        'imagen': request.json['imagen']
     }
     result = db.recipes.insert_one(recipe_data)
     print("Receta insertada con ID:", result.inserted_id)
@@ -34,7 +36,9 @@ def getRecipes():
             'nombre_receta': recipe.get('nombre_receta'),
             'ingredientes': recipe.get('ingredientes', []),
             'instrucciones': recipe.get('instrucciones'),
-            'categoria': recipe.get('categoria')
+            'categoria': recipe.get('categoria'),
+            'tiempo_preparacion': recipe.get('tiempo_preparacion'),
+            'imagen': recipe.get('imagen')
         }
         formatted_recipes.append(formatted_recipe)
       return jsonify(formatted_recipes)
@@ -51,7 +55,9 @@ def getRecipe(id):
         'nombre_receta': recipe.get('nombre_receta'),
         'ingredientes': recipe.get('ingredientes', []),
         'instrucciones': recipe.get('instrucciones'),
-        'categoria': recipe.get('categoria')
+        'categoria': recipe.get('categoria'),
+        'tiempo_preparacion': recipe.get('tiempo_preparacion'),
+        'imagen': recipe.get('imagen')
     })
 
 
@@ -71,7 +77,9 @@ def updateRecipe(id):
         'nombre_receta' : request.json['nombre_receta'],
         'ingredientes': request.json.get('ingredientes', [] ),
         'instrucciones': request.json.get('instrucciones'),
-        'categoria': request.json.get('categoria')
+        'categoria': request.json.get('categoria'),
+        'tiempo_preparacion': request.json.get('tiempo_preparacion'),
+        'imagen': request.json.get('imagen')
 
     }})
     return jsonify({'msg' : 'Receta actualizada'})
