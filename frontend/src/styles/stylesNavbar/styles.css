@@ -9,18 +9,21 @@
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex;  
-    justify-content: space-between;  
+    justify-content:space-between;
     align-items: center; 
+    margin-left: 1px;
+    
 }
 
 .logo img {
     width: 70px;
     height: 70px;
+   
     
 }
 
 .navbarLink {
-    color: #FFFFFF; 
+    color: #000000; 
     text-decoration: none; 
     font-size: 18px; 
     margin-left: 20px; 

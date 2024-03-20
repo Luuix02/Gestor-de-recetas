@@ -1,0 +1,17 @@
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.categorias div {
+  padding: 10px 20px;
+}
+
+.categorias div:hover a {
+  color: #ff6f61;
+}
+.categoria {
+  color: black;
+}
