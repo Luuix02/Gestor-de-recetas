@@ -6,13 +6,10 @@ import Navbar from "../../../components/navbar/page";
 export default function snack() {
   return (
     <>
-   
-    <Navbar/>
-    <ContenidoHome/>
-    <Cards/>
-    <CardSnack/>
-
+      <Navbar />
+      <ContenidoHome />
+      <Cards />
+      <CardSnack />
     </>
-    )
-    
+  );
 }

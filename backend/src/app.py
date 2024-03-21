@@ -5,7 +5,7 @@ from flask_cors  import CORS
 app = Flask(__name__)
 app.config['MONGO_URI'] = "mongodb+srv://luisavilla:luuix02@cluster0.ee3ls57.mongodb.net/recetas?retryWrites=true&w=majority&appName=Cluster0"
 mongo = PyMongo(app)
-
+CORS(app)
 db = mongo.db.recipes
 
 #Para crear recetas
