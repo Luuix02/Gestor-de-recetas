@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export default function CardDesayuno({ recetas }) {
   return (
     <div className="card-container">
-      {recetas.map((receta) => (
+          {recetas && recetas.map((receta)=> (
         <div className="card" key={receta._id}>
           <div className="image-container">
           <Image
