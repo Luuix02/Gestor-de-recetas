@@ -1,7 +1,7 @@
 "use client";
 import "../../src/styles/stylesCardsCategorias/styles.css";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+
 export default function CardDesayuno({ recetas }) {
   return (
     <div className="card-container">
