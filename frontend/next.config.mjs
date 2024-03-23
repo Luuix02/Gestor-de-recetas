@@ -26,7 +26,17 @@ const nextConfig = {
       "img-global.cpcdn.com",
       "w7.pngwing.com",
       "cocineroimprovisado.com",
-
+      "www.nattahometaste.com",
+      "colmaiz.co",
+      "www.comidascolombianas.com",
+      "e7.pngegg.com",
+      "mitartapreferida.net",
+      "uploads.vibra.co",
+      "heladoscaseros.com",
+      ""
+      
+      
+      
     ],
   },
 };
