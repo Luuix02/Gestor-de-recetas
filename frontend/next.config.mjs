@@ -18,6 +18,15 @@ const nextConfig = {
       "www.unacolombianaencalifornia.com",
       "cursoscocinaperuana.com",
       "boquisabroso.com.co",
+      "vivirenelpoblado.com",
+      "vivirenelpoblado.com",
+      "www.simplyorganic.com.mx",
+      "c0.klipartz.com",
+      "colanta.com",
+      "img-global.cpcdn.com",
+      "w7.pngwing.com",
+      "cocineroimprovisado.com",
+
     ],
   },
 };

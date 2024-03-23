@@ -1,6 +1,7 @@
 "use client";
 import "../../src/styles/stylesCardsCategorias/styles.css";
 import Image from "next/image";
+
 export default function CardAlmuerzo({recetas}) {
   return (
     <div className="card-container">
