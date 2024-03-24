@@ -1,8 +1,10 @@
+import PageRecetas from "../../../components/componentePaginaRecetas/page";
+
 export default function receta(){
     return (
 
         <>
-        <h1>hola desde receta</h1>
+        <PageRecetas/>
         </>
     )
 }
