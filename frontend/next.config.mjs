@@ -33,7 +33,8 @@ const nextConfig = {
       "mitartapreferida.net",
       "uploads.vibra.co",
       "heladoscaseros.com",
-      "cdn.icon-icons.com"
+      "cdn.icon-icons.com",
+      "bellezaparadummiescomoyo.files.wordpress.com",
       
       
       

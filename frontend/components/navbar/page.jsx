@@ -27,9 +27,9 @@ export default function Navbar() {
                     </div>
 
 
-                    <div className='misrecetas'>
-                        <Link href={`/mireceta`} className="navbarLink">
-                            Mis recetas
+                    <div className='agregarReceta'>
+                        <Link href={`/agregarreceta`} className="navbarLink">
+                            Agregar receta
                         </Link>
                     </div>
 
