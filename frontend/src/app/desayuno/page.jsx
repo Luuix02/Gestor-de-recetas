@@ -6,6 +6,7 @@ import Navbar from "../../../components/navbar/page";
 import { useState, useEffect } from "react";
 
 export default function Desayuno() {
+
   const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
