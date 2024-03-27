@@ -1,14 +1,13 @@
-
 import "../../src/styles/stylesCategoriasCard/styles.css";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Cards() {
   return (
     <main>
       <article className="categorias">
         <div>
-          <Link href={`/desayuno`} className="categoria" >
-          Desayuno
+          <Link href={`/desayuno`} className="categoria">
+            Desayuno
           </Link>
         </div>
 
@@ -19,13 +18,13 @@ export default function Cards() {
         </div>
 
         <div>
-          <Link href={`/cena`} className="categoria" >
+          <Link href={`/cena`} className="categoria">
             Cena
           </Link>
         </div>
 
         <div>
-          <Link href={`/snack`} className="categoria" >
+          <Link href={`/snack`} className="categoria">
             Snacks
           </Link>
         </div>
@@ -33,4 +32,3 @@ export default function Cards() {
     </main>
   );
 }
-

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Cards from "../../../components/categoriasCard/page";
 import CardSnack from "../../../components/componenteSnacks/page";
 import ContenidoHome from "../../../components/contenidoHome/page";
@@ -6,7 +6,6 @@ import Navbar from "../../../components/navbar/page";
 import { useState, useEffect } from "react";
 
 export default function snack() {
-
   const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
@@ -25,7 +24,8 @@ export default function snack() {
       <Navbar />
       <ContenidoHome />
       <Cards />
-      <CardSnack recetas={recetas.filter((receta) => receta.categoria === "Snacks")}
+      <CardSnack
+        recetas={recetas.filter((receta) => receta.categoria === "Snacks")}
       />
     </>
   );

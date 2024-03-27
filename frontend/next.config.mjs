@@ -35,6 +35,7 @@ const nextConfig = {
       "heladoscaseros.com",
       "cdn.icon-icons.com",
       "bellezaparadummiescomoyo.files.wordpress.com",
+      "editorialtelevisa.brightspotcdn.com"
       
       
       

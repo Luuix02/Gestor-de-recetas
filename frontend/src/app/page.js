@@ -1,5 +1,5 @@
 "use client";
-import "./page.module.css"
+import "./page.module.css";
 import Navbar from "../../components/navbar/page";
 import ContenidoHome from "../../components/contenidoHome/page";
 import Cards from "../../components/categoriasCard/page";
@@ -7,7 +7,6 @@ import CardDesayuno from "../../components/componenteDesayuno/page";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-
   const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
@@ -22,20 +21,12 @@ export default function Home() {
   }, []);
   return (
     <>
-  
-  <Navbar/>
-    <ContenidoHome/>
-    <Cards/>
-    <CardDesayuno recetas={recetas.filter((receta) => receta.categoria === "Desayuno")}
-    />
-    
-    
-
-    
-    
-    
+      <Navbar />
+      <ContenidoHome />
+      <Cards />
+      <CardDesayuno
+        recetas={recetas.filter((receta) => receta.categoria === "Desayuno")}
+      />
     </>
   );
-
-  
 }

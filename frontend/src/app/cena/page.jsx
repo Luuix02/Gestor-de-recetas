@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Cards from "../../../components/categoriasCard/page";
 import CardCena from "../../../components/componenteCena/page";
 import ContenidoHome from "../../../components/contenidoHome/page";
@@ -6,7 +6,6 @@ import Navbar from "../../../components/navbar/page";
 import { useState, useEffect } from "react";
 
 export default function cena() {
-
   const [recetas, setRecetas] = useState([]);
 
   useEffect(() => {
@@ -21,13 +20,12 @@ export default function cena() {
   }, []);
   return (
     <>
-    <Navbar/>
-    <ContenidoHome/>
-    <Cards/>
-    <CardCena recetas={recetas.filter((receta) => receta.categoria === "Cena")}
-    />
-
+      <Navbar />
+      <ContenidoHome />
+      <Cards />
+      <CardCena
+        recetas={recetas.filter((receta) => receta.categoria === "Cena")}
+      />
     </>
-    )
-    
+  );
 }
