@@ -28,5 +28,16 @@ export default function PageMisReceta() {
     }
   };
 
-  return <MisRecetas recetas={recetas} eliminarReceta={eliminarReceta} />;
+  const confirmarEliminacion = (idReceta) => {
+    const confirmacion = window.confirm(
+      "¿Estás seguro de que deseas eliminar esta receta?"
+    );
+    if (confirmacion) {
+      eliminarReceta(idReceta);
+    }
+  };
+
+  return (
+    <MisRecetas recetas={recetas} confirmarEliminacion={confirmarEliminacion} />
+  );
 }

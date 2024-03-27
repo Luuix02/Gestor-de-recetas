@@ -7,7 +7,7 @@ import Modal from "react-modal";
 import Navbar from "../navbar/page";
 import axios from "axios";
 
-export default function MisRecetas({ recetas, eliminarReceta }) {
+export default function MisRecetas({ recetas, confirmarEliminacion }) {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
   const [recetaEditada, setRecetaEditada] = useState(null);
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -79,7 +79,7 @@ export default function MisRecetas({ recetas, eliminarReceta }) {
                   <td>
                     <button
                       className="btn-eliminar"
-                      onClick={() => eliminarReceta(receta._id)}
+                      onClick={() => confirmarEliminacion(receta._id)}
                     >
                       Eliminar
                     </button>
