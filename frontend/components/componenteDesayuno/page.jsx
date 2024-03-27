@@ -1,14 +1,31 @@
 "use client";
 import "../../src/styles/stylesCardsCategorias/styles.css";
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Modal from "react-modal";
+import ModalCards from "../componenteModalCards/page";
 
 export default function CardDesayuno({ recetas }) {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+
+  const openModal = (recipe) => {
+    setSelectedRecipe(recipe);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedRecipe(null);
+    setModalOpen(false);
+  };
+
   return (
+    <>
     <div className="card-container">
       {recetas &&
         recetas.map((receta) => (
-          <div className="card" key={receta._id}>
+          <div className="card" key={receta._id} onClick={() => openModal(receta)}>
             <div className="image-container">
               <Image
                 src={receta.imagen || ""}
@@ -28,19 +45,23 @@ export default function CardDesayuno({ recetas }) {
                 />
                 <span className="prep-time">{receta.tiempo_preparacion}</span>
               </div>
-              <div className="iconoVer">
-                <Link href={`/receta/${receta._id}`}>
-                  <Image
-                    src="https://cdn.icon-icons.com/icons2/1302/PNG/512/eyeview_85767.png"
-                    width={20}
-                    height={20}
-                    className="ver"
-                  ></Image>
-                </Link>
-              </div>
             </div>
           </div>
         ))}
     </div>
+
+     {modalOpen && selectedRecipe && (
+        <Modal
+          isOpen={modalOpen}
+          onRequestClose={closeModal}
+          contentLabel="Detalles de la Receta"
+          className="modal-content"
+          
+        >
+          <ModalCards selectedRecipe={selectedRecipe} onClose={closeModal} />
+        </Modal>
+        )}
+   </>
+    
   );
 }

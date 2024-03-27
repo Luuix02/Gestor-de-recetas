@@ -24,7 +24,6 @@ export default function Desayuno() {
       <Navbar />
       <ContenidoHome />
       <Cards />
-
       <CardDesayuno
         recetas={recetas.filter((receta) => receta.categoria === "Desayuno")}
       />
