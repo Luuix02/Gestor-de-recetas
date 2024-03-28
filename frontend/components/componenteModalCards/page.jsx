@@ -3,7 +3,7 @@ import "../../src/styles/stylesModalCards/styles.css";
 import React from "react";
 import Image from "next/image";
 
-export default function ModalCards({selectedRecipe, onClose}) {
+export default function ModalCards({ selectedRecipe, onClose }) {
   return (
     <>
       <div onClick={onClose} className="cerrarModal">
